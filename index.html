@@ -3,49 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Azeezat Oladele — Frontend developer. Portfolio with projects and contact info.">
     <title>Azeezat | Frontend Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header>
-        <h1>Azeezat Oladele</h1>
-        <p>Frontend Developer</p>
+        <nav aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Azeezat Oladele</h1>
+            <p class="subtitle">Frontend Developer</p>
+            <a class="btn" href="#contact">Hire me</a>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am an aspiring frontend developer with skills in HTML, CSS, and JavaScript.
-            I enjoy building responsive and user-friendly web interfaces and I am actively
-            seeking internship opportunities to grow my skills.
-        </p>
-    </section>
+    <main id="main">
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <p>
+                I am an aspiring frontend developer with skills in HTML, CSS, and JavaScript.
+                I build responsive, accessible, and user-friendly web interfaces and I am
+                actively seeking opportunities to grow my skills.
+            </p>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>More projects coming soon.</p>
-    </section>
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>Project One</h3>
+                    <p>Simple responsive landing page built with HTML and CSS.</p>
+                    <a href="#" class="btn">View</a>
+                </article>
+                <article class="project-card">
+                    <h3>Project Two</h3>
+                    <p>Interactive UI built with vanilla JavaScript.</p>
+                    <a href="#" class="btn">View</a>
+                </article>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: laraolamipo@email.com</p>
-        <p>GitHub: github.com/laraolamipo-stack</p>
-    </section>
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:laraolamipo@email.com">laraolamipo@email.com</a></p>
+            <p>GitHub: <a href="https://github.com/laraolamipo-stack" target="_blank" rel="noopener">github.com/laraolamipo-stack</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">© 2025 Azeezat Oladele — Built with care</div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
